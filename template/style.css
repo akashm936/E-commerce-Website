@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -14,19 +19,23 @@
     justify-content: center;
     text-align: center;
     padding-bottom: 20px;
+    
 }
 
 .heading{
     /* background-color: black;
     color: aliceblue; */
     padding: 20px;
+    font-family: "Open Sans", sans-serif;
+
 }
 
 .container{
 
     width: 60%;
     height: 3.5rem;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    border-radius: 7px;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -38,33 +47,59 @@
     width: 100%;
     height: 100%;
     font-size: 1.2rem;
+    border-radius: 7px;
+    border: none;
+    gap: 5px;
 }
 
 .btn:hover{
     background-color: black;
     color: white;
+    border-radius: 7px;
     
 }
 
+.btn a{
+    text-decoration: none;
+    color: black;
+    
+
+}
+.btn a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+
+}
 .product-details{
     max-width: 90%; ;
-    height: 470px;
-    border: 3px solid black;
+    height: auto;
+    /* border: 3px solid black; */
     margin: 10px;
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
     margin: 30px auto;
 }
 
 .card{
-    width: 320px;
-    height: 450px;
+    width: 270px;
+    height: 470px;
     /* border: 2px solid red; */
-    margin: 5px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 0.8rem;
     text-align: left;
     position: relative;
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+
     /* z-index: -5; */
     /* justify-content: space-evenly; */
+}
+.card:hover{
+    background-color: rgb(114, 27, 212);
+    color: white;
 }
 
 .card img{
@@ -72,6 +107,7 @@
     max-height: 350px;
     /* display: none; */
     object-fit:cover;
+    border-radius: 10px;
     border: 2px solid black;
     /* position: relative; */
     position: absolute;
@@ -80,12 +116,15 @@
 
 #tab{
     z-index: 5;
+    
     margin: 10px 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.918);
     color: black;
     text-align: center;
     align-items: center;
     padding: 10px;
+    border: none;
+    border-radius: 5px;
     justify-content: center;
     position: absolute;
     width: 100px;
@@ -122,4 +161,16 @@
     background-color: black;
     color: white;
     font-size: 1rem;
+    border-radius: 7px;
+    border: none;
+    margin: 5px auto;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.card .btn-1:hover{
+    /* max-width: 300px; */
+    background-color: white;
+    color: black;
+    border-radius: 7px;
 }
